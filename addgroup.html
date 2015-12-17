@@ -1,0 +1,21 @@
+<h1>Add A New Group and save hours of time!</h1>
+
+<form>
+
+</form>
+
+<main ng-controller="GroupsController as groups">
+
+  <h2 ng-show="groups.selectedGroup">{{ groups.selectedGroup.title}} <span class="{{ groups.selectedGroup.picture | lowercase }}">{{ groups.selectedGroup.picture }}</span></h2>
+
+  <form name="groups.newGroup" ng-submit="groups.addGroup()">
+    <label>Title</label>
+    <input type="text" name="name" ng-model="groups.group.title">
+    <label>Picture</label>
+    <input type="text" name="picture" ng-model="groups.group.picture">
+    <input type="submit" value="Add">
+  </form>
+
+  <h2 ng-class="groups.newGroup.title">{{groups.newGroup.title}}</h2>
+
+</main>
