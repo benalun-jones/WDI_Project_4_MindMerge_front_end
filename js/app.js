@@ -1,6 +1,7 @@
 angular
   .module('MindMergeApp', ['satellizer', 'ui.router', 'ngResource'])
-  .constant('API_URL', 'http://localhost:3000')
+  .constant('API_URL', 'http://dashboard.heroku.com/apps/stormy-fortress-5795/settings')
+
   .config(oauthConfig)
   .config(MainRouter);
 

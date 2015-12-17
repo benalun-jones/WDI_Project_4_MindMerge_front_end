@@ -30,7 +30,7 @@ angular
 
     function createUser(){
       $http
-      .post('http://localhost:3000/users', { user: self.newUser })
+      .post('https://dashboard.heroku.com/apps/stormy-fortress-5795/resources', { user: self.newUser })
       .then(function(response){
         self.all.push(self.newUser);
         toggleUserForm();
